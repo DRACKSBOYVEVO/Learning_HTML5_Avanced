@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.box {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    border-radius: 29px;
+    background: linear-gradient(225deg, #f0f0f0, #cacaca);
+    box-shadow:  -23px 23px 46px #acacac, 23px -23px 46px #ffffff;
+}
+
+textarea {
+    border-radius: 10px;
+    width: 100%;
+    /*Bloquear barra de textarea*/
+    resize: none;
+    font-size: 1em; /*Aumenta el tamaño original*/
+    height: 95px;
+    padding: 5px 5px;
+}
+
+label { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.btn-success {
+    background: #5D6D7E;
+    border: none;
+    padding: 5px 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow:  -13px 13px 31px #aaaaaa, 13px -13px 31px #ffffff;
+}
+
+.btn-success:hover{
+    background: #85929E;
+}

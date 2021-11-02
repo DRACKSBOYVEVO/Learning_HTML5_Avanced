@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloc de actividades pendites</title>
+    <link rel="stylesheet" href="/Bloc_de_notas/Assets/css/main.css">
+</head>
+<body>
+    <div class="box">
+        <div>
+            <label for="">Texto de la tarea</label>
+            <textarea name="" id="textTask" cols="20" rows="4"></textarea>
+        </div>
+        <div>
+            <button class="btn-success" onclick="TaskManager.add()">Guardar</button>
+        </div>
+    </div>
+
+    <div id="divTasks" class="ejemplo">
+
+    </div>
+<script src="/Bloc_de_notas/Assets/js/main.js"></script>
+    <script>
+        let taskManager = new TaskManager(
+            document.getElementById("divTasks"), 
+            document.getElementById("textTask")
+        );
+    </script>
+</body>
+</html>
