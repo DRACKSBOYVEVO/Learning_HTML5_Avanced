@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: sans-serif;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        caption {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        th, td {
+            border: 2px solid red;
+            padding: .4rem;
+        }
+        tr:nth-child(4), td:nth-child(2){
+            background-color: royalblue;
+            letter-spacing: 5px;
+            padding-left: 12px;
+            text-transform: uppercase;
+        }
+        td:first-child, th, tfoot {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Las tablas en HTML sirven para mostrar contenido tabulado
+        
+        La estructura básica de una tabla se compone de:
+            Table -> Etiqueta que encierra una tabla.
+            tr -> table row, etiqueta que hace una fila.
+            td -> table data, etiqueta que hace una celda.
+
+        truco: El número de celdas dentro de un tr establecera el 
+        numero de columnas de la tabla.
+    -->
+
+    <h1>
+        Horario
+    </h1>
+
+    <table>
+        <!-- ========== Filas -->
+        <!--titulo de las tablas-->
+        <caption>Horario de clases</caption>
+        <colgroup>
+            <col span="4">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td>7:00 A.M - 8:00 A.M</td>
+            <td>Sociales</td>
+            <td>Sociales</td>
+            <td>Sociales</td>
+            <td>Sociales</td>
+        </tr>
+        <tr>
+            <td>7:00 A.M - 8:00 A.M</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>7:00 A.M - 8:00 A.M</td>
+            <td colspan="5">DESCANSO</td>
+        </tr>
+        <tr>
+            <td>7:00 A.M - 8:00 A.M</td>
+            <td>Religion</td>
+            <td>Religion</td>
+            <td>Religion</td>
+            <td>Religion</td>
+        </tr>
+        <tr>
+            <td>7:00 A.M - 8:00 A.M</td>
+            <td>Etica</td>
+            <td rowspan="2">Etica</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Total de asignaturas</td>
+            <td>5</td>
+        </tr>
+    </tfoot>
+    </table>
+
+</body>
+</html>
