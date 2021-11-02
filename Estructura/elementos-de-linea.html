@@ -9,7 +9,7 @@
 <body>
   <h1>Elementos de línea</h1>
   <!--
-        em -> emphasis
+        em -> emphasis mas importancia
         strong -> más enfasis
         small -> Menos enfasis que el texto normal
         br -> Forzar un salto de línea
@@ -27,18 +27,33 @@
   </p>
 
   <p>
-    Lorem ipsum dolor sit amet <br>
+    Lorem ipsum dolor sit amet <br><!--<br/> XHTML de la versión anterior--> 
     consectetur adipisicing elit. Saepe velit nihil quis, perferendis voluptas tempora ipsam
     distinctio vero repellat nemo deserunt similique voluptates eveniet? Necessitatibus
     repudiandae neque officiis saepe itaque?
   </p>
 
+<!-- 
+  MALAS PRACTICAS!!!
+  <br> 
+  <br>
+  <br>
+  <br>
+  <br>
+-->
+
+<!-- Romper el salto de linea en varias secciones con wbr cambiando las / -->
   <p>http://127.0.0.1:5500/<wbr>cursos/<wbr>html/<wbr>elementos/<wbr>elementos-de-linea.html</p>
-  <time>24/10/2020 10:35</time>
+  <!--Para dar formato a la fecha del articulo o publicacion-->
+  <time>24/10/2020 10:35</time> <!--Forma 1 -->
+  <time>24/10/2020</time> <!--Forma 2 -->
+  <time>10:35</time> <!--Forma 3 -->
+
+  <!--Estilo de letras-->
   <p>
-    <i>Italic</i>
-    <b>Bold</b>
-    <u>Underline</u>
+    <i>Soy un texto en Italic</i> <!--Tambien este elemento se utiliza para los iconos-->
+    <b>Soy un texto en Bold</b>
+    <u>Soy un texto en Underline</u>
   </p>
 
   <p>4 elevado al cuadrado se representa así 4<sup>2</sup></p>
